@@ -1,0 +1,7 @@
+.add__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10vh 20vw;
+  padding-top: 120px;
+}

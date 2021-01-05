@@ -1,0 +1,52 @@
+<form [formGroup]="form" (ngSubmit)="save($event)" class="form">
+  <p class="item__input">
+    <mat-form-field appearance="standard">
+      <mat-label>Numero de Identificacion</mat-label>
+      <input type="number" matInput formControlName="identificationField">
+      <mat-error
+        *ngIf="form.get('identificationField').touched && form.get('identificationField').hasError('required')">
+        Identificaición requerida
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p class="item__input">
+    <mat-form-field appearance="standard">
+      <mat-label>Nombre Completo</mat-label>
+      <input type="text" matInput formControlName="nameField">
+      <mat-error *ngIf="form.get('nameField').touched && form.get('nameField').hasError('required')">El nombre es
+        requerido
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p class="item__input">
+    <mat-form-field appearance="standard">
+      <mat-label>Celular</mat-label>
+      <input type="text" matInput formControlName="addressField">
+      <mat-error *ngIf="form.get('addressField').touched && form.get('addressField').hasError('required')">Este campo es
+        requerido
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p class="item__input">
+    <mat-form-field appearance="standard">
+      <mat-label>Dirección</mat-label>
+      <input type="tel" matInput formControlName="telField">
+      <mat-error *ngIf="form.get('telField').touched && form.get('telField').hasError('required')">Este campo es
+        requerido
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p class="item__input">
+    <mat-form-field appearance="standard">
+      <mat-label>Fecha de Cumpleaños</mat-label>
+      <input type="date" matInput formControlName="dateField">
+      <mat-error *ngIf="form.get('dateField').touched && form.get('dateField').hasError('required')">Este campo es
+        requerido
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p class="btns">
+    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Guardar</button>
+    <button type="button" mat-raised-button color="warn">Cancelar</button>
+  </p>
+</form>

@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 120px;
+}
+.total,
+.birthday {
+  width: 200px;
+  height: 140px;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #3f51b5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+}
+.total__count,
+.birthday__count {
+  font-size: 3rem;
+  color: #fff;
+}
+.total__paragraph,
+.birthday__paragraph {
+  color: #fff;
+}

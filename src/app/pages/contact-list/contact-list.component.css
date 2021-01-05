@@ -1,0 +1,10 @@
+.container__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10vh 20vw;
+  padding-top: 120px;
+}
+.btn__container {
+  text-align: end;
+}

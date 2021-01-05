@@ -1,0 +1,9 @@
+.form {
+  background-color: #fff;
+  width: fit-content;
+  padding: 20px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}

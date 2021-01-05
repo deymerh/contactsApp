@@ -1,0 +1,6 @@
+<div class="container__list">
+  <div class="btn__container animate__animated animate__fadeIn">
+    <button routerLink="/new" mat-raised-button color="primary">Nuevo Contacto</button>
+  </div>
+  <app-item-contact *ngFor="let contact of contacts" [contact]="contact"></app-item-contact>
+</div>
