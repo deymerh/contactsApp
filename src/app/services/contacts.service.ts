@@ -45,7 +45,8 @@ export class ContactsService {
   birthday(){
     let fecha = new Date();
     let currencyDate = fecha.toLocaleDateString();
-    let diaMes = '0' + fecha.getUTCDate();
+    let diaMes =  fecha.getUTCDate();
+    diaMes = diaMes > 9 ? diaMes : parseInt('0'+ diaMes);
     let mes = fecha.getUTCMonth() + 1;
     let mesActual = '0' + mes;
     let anio = fecha.getFullYear();
