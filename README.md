@@ -1,6 +1,6 @@
 https://contacts-app.deymerh.vercel.app/
 
-<img src="./src/assets/imgs/contacts-app-deymerh.vercel.app_.png" width="600px" alt="Vista previs contactsApp"/>
+<img src="./src/assets/imgs/contacts-app-deymerh.vercel.app_.png" width="100%" alt="Vista previs contactsApp"/>
 
 # ContactsApp
 
